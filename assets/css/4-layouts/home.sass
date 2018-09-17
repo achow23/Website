@@ -10,13 +10,28 @@
 
   section
     padding: 50px 0
+    margin-right: 20px
+
+  .container
+    margin-bottom: 100px
 
   .flex
     display: flex
     flex-direction: row
 
+  .flexSpace
+    justify-content: space-between
+    width: 600px
+
+  .flexCol
+    display: flex
+    flex-direction: column
+
   .flex--center
     justify-content: center
+
+  .flex--end
+    justify-content: flex-end
 
   .flex--space-around
     justify-content: space-around
@@ -27,9 +42,22 @@
 
 // dictates dimensions of columns
 .col-1
-  max-width: 400px
+  max-width: 500px
   margin: 0 10px
   //background: pink
+
+.col-home
+  max-width: 500px
+  margin: 0 10px
+
+// about page
+.col-left
+  width: 200px
+  margin-right: 0px
+
+.col-right
+  max-width: 600px
+  margin-left: 50px
 
 .col-2
   max-width: 620px
@@ -42,6 +70,9 @@
 
 .push-right
   margin-left: 330px
+
+.push-left
+  margin-left: 100px
 
 @media (max-width: 640px)
   .home-sections .flex
@@ -62,3 +93,9 @@
   line-height: 1.2
   position: relative
   top: 40px
+
+.about
+  font-size: 16px
+
+.info
+  font-size: 16px
