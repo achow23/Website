@@ -1,6 +1,6 @@
-_site
 .idea
 node_modules
+pigments = false
 
 ### Jekyll ###
 _site/
