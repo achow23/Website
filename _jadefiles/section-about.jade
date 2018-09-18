@@ -1,20 +1,20 @@
 mixin nav-lang()
   ul
-    li 
+    li.title.white
       b LANGUAGES
-    li Python 
-    li C++
+    li Python  
     li Javascript
+    li C++
     li Java
     li HTML 
     li CSS/Sass 
-    li C
     li Swift
+    li C
 
 mixin nav-frameworks()
   ul
-    li 
-      b Frameworks
+    li.title.white
+      b FRAMEWORKS
     li Flask 
     li Node
     li Angular
@@ -24,17 +24,17 @@ mixin nav-frameworks()
 
 mixin nav-tools()
   ul
-    li 
+    li.title.white
       b TOOLS
     li Git & Github
+    li MondoDB
     li Bash
-    li MongoDB
     li Unix
     
     
 mixin nav-design()
   ul
-    li 
+    li.title.white
       b DESIGN
     li Sketch
     li InVision
@@ -47,24 +47,24 @@ section.about
     .flexCol.flex--center
       .container.flex
         .col-left
-          p.about 
+          p.aboutTitle.white
             b BACKGROUND
           
-        .col-right
-          p.info 
+        .col-right 
+          p.aboutpara 
             | I'm currently a rising junior at 
-            b Stanford University
+            b.white Stanford University
             |, majoring in Computer Science with a specialization in 
-            b Artifical Intelligence
-            |. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own social good projects.
-          p.info As a software engineer, I enjoy bridging the gap between engineering and design - combining my technical knowledge with visual artistry to create a beautiful product. My goal is to always build scalable and efficient applications while providing engaging user experiences. 
-          p.info 
-            b When I'm not in front of a compouter screen, 
+            b.white Artifical Intelligence
+            |. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own social good projects, ranging from mobile to web applications.
+          p.aboutpara As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with visuals to create a highly aesthetic product. My goal is to always build scalable and efficient applications while providing engaging user experiences. 
+          p.aboutpara 
+            b.white When I'm not in front of a computer screen, 
             | you can find me playing basketball, taking photos, or crossing off another item on my bucket list!
 
       .container.flex
         .col-left
-          p.about 
+          p.aboutTitle 
             b SKILLS
             
         .col-right
@@ -84,3 +84,52 @@ section.about
               .flexCol
                 nav.lang
                   +nav-design()
+                  
+      .container.flex
+        .col-left
+          p.aboutTitle 
+            b EXPERIENCE
+            
+        .col-right 
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b Stanford University
+              p.info AI / HCI Research Intern
+            .flexCol.experience2
+              p.date June 2018 - present
+          
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b CS + Social Good
+              p.info Studio Teaching Team
+            .flexCol.experience2
+              p.date May 2018 - present
+              
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b Tree2Tree
+              p.info iOS Developer
+            .flexCol.experience2
+              p.date Jan 2018 - present
+        
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b OneJump
+              p.info iOS Developer
+            .flexCol.experience2
+              p.date Sep 2017 - Dec 2018
+          
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b Stanford VPTL
+              p.info Tech Desk Consultant
+            .flexCol.experience2
+              p.date Sep 2017 - present
+          
+          
+          
