@@ -547,17 +547,18 @@ section.home {
   -webkit-background-size: cover;
           background-size: cover;
   color: #3f3f42;
-  height: 100vh;
+  height: 70vh;
   width: 100%; }
   section.home h2 {
     color: #3f3f42;
     font-size: 60px;
     font-weight: 400;
     line-height: 1;
-    margin-left: -75px;
     margin-top: 0;
     position: relative;
     top: 150px; }
+  section.home .home-lead {
+    margin-left: 75px; }
 
 @media (max-width: 640px) {
   section.about h2, section.about .home-lead {
