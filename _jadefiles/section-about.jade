@@ -1,0 +1,139 @@
+mixin nav-lang()
+  ul
+    li.title.white
+      b LANGUAGES
+    li Python  
+    li Javascript
+    li C++
+    li Java
+    li HTML 
+    li CSS/Sass 
+    li Swift
+    li C
+
+mixin nav-frameworks()
+  ul
+    li.title.white
+      b FRAMEWORKS
+    li Flask 
+    li Node
+    li Angular
+    li React
+    li Firebase
+    
+
+mixin nav-tools()
+  ul
+    li.title.white
+      b TOOLS
+    li Git & Github
+    li MondoDB
+    li Bash
+    li Unix
+    
+    
+mixin nav-design()
+  ul
+    li.title.white
+      b DESIGN
+    li Sketch
+    li InVision
+    li Wireframing
+    li Prototyping
+    li User Testing
+    
+section.about
+  .flex.flex--center
+    .flexCol.flex--center
+      .container.flex
+        .col-left
+          p.aboutTitle.white
+            b BACKGROUND
+          
+        .col-right 
+          p.aboutpara 
+            | I'm currently a rising junior at 
+            b.white Stanford University
+            |, majoring in Computer Science with a specialization in 
+            b.white Artifical Intelligence
+            |. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own social good projects, ranging from mobile to web applications.
+          p.aboutpara As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with visuals to create a highly aesthetic product. My goal is to always build scalable and efficient applications while providing engaging user experiences. 
+          p.aboutpara 
+            b.white When I'm not in front of a computer screen, 
+            | you can find me playing basketball, taking photos, or crossing off another item on my bucket list!
+
+      .container.flex
+        .col-left
+          p.aboutTitle 
+            b SKILLS
+            
+        .col-right
+          .flex.flexSpace
+              .flexCol
+                nav.lang
+                  +nav-lang()
+                
+              .flexCol
+                nav.lang
+                  +nav-frameworks()
+                
+              .flexCol
+                nav.lang
+                  +nav-tools()
+                
+              .flexCol
+                nav.lang
+                  +nav-design()
+                  
+      .container.flex
+        .col-left
+          p.aboutTitle 
+            b EXPERIENCE
+            
+        .col-right 
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b Stanford University
+              p.info AI / HCI Research Intern
+            .flexCol.experience2
+              p.date June 2018 - present
+          
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b CS + Social Good
+              p.info Studio Teaching Team
+            .flexCol.experience2
+              p.date May 2018 - present
+              
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b Tree2Tree
+              p.info iOS Developer
+            .flexCol.experience2
+              p.date Jan 2018 - present
+        
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b OneJump
+              p.info iOS Developer
+            .flexCol.experience2
+              p.date Sep 2017 - Dec 2018
+          
+          .flex.flexSpace
+            .flexCol.experience1
+              p.info.white
+                b Stanford VPTL
+              p.info Tech Desk Consultant
+            .flexCol.experience2
+              p.date Sep 2017 - present
+          
+          
+          .flex.flexSpace.extra
+            .flexCol.experience1
+              p.resume
+                a(href = "../assets/img/resume.pdf") View my resume 
+                    

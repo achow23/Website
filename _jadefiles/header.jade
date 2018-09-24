@@ -1,0 +1,23 @@
+mixin nav-content()
+  ul
+    li: a(href="#Home") Home
+    li: a(href="#About") About
+    li: a(href="#Projects") Projects
+    li: a(href="#Photography") Photography
+    li: a(href="#Contact") Contact
+
+.mobile-nav
+  +nav-content()
+
+
+header
+  .header-position
+    h1.parent 
+      div.child AC
+    
+    nav.site-nav
+      +nav-content()
+      
+    a(href="mailto:archow@stanford.edu").email-link +email me
+    
+    .mobile-nav-toggle: span

@@ -1,0 +1,108 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+
+  @media (max-width: 775px)
+    display: block
+
+.home-sections
+  flex: 1
+
+  section
+    padding-bottom: 130px
+    //margin-right: 20px
+
+    // for the different types of layouts for each section
+  .container
+    margin-top: 150px
+
+  .flex
+    display: flex
+    flex-direction: row
+
+  .flexSpace
+    justify-content: space-between
+    width: 600px
+
+  .extra
+    margin-top: 50px
+
+  .experience1
+    width: 450px
+
+  .experience2
+    width: 150px
+    margin-bottom: 50px
+
+
+  .flexCol
+    display: flex
+    flex-direction: column
+
+  .flex--center
+    justify-content: center
+
+  .flex--end
+    justify-content: flex-end
+
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
+
+// dictates dimensions of columns
+.col-1
+  max-width: 500px
+  margin: 0 10px
+  //background: pink
+
+.col-home
+  max-width: 500px
+  margin: 0 10px
+
+// about page
+.col-left
+  width: 150px
+  text-align: right
+  margin-right: 75px
+
+.col-right
+  max-width: 600px
+  margin-left: 0px
+
+.col-2
+  max-width: 620px
+  margin: 0 10px
+  //background: honeydew
+
+.col-50
+  width: 50%
+  //background: yellow
+
+.push-right
+  margin-left: 330px
+
+.push-left
+  margin-left: 100px
+
+@media (max-width: 640px)
+  .home-sections .flex
+    display: block
+
+  .col-1
+    max-width: 100%
+
+  .col-50
+    width: auto
+
+  .push-right
+    margin-left: 10px
+
+
+.home-lead
+  font-size: 36px
+  line-height: 1.2
+  position: relative
+  top: 150px
